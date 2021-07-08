@@ -108,5 +108,34 @@
     .question-list {
       margin-top: 32px;
     }
+
+    .no-questions {
+      margin-top: 20%;
+      width: 100%;
+
+      > div {
+        display: grid;
+        justify-items: center;
+
+        span {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 27px;
+          text-align: center;
+          color: #29292E;
+        }
+
+        p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 21px;
+          text-align: center;
+          color: #737380;
+          max-width: 280px;
+        }
+      }
+    }
   }
 }
