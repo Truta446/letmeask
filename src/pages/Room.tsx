@@ -77,8 +77,6 @@ export function Room() {
           {questions.length > 0 && <span>{questions.length} {questions.length === 1 ? 'pergunta' : 'perguntas'}</span>}
         </div>
 
-        {questions.length > 0 ? (
-          <>
           <form onSubmit={handleSendQuestion}>
             <textarea
               name="question"
@@ -100,6 +98,7 @@ export function Room() {
             </div>
           </form>
 
+        {questions.length > 0 ? (
           <div className="question-list">
             {questions.map(question => (
               <Question
@@ -125,7 +124,6 @@ export function Room() {
               </Question>
             ))}
           </div>
-          </>
         ) : (
           <div className="no-questions">
             <div>
